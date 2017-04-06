@@ -5,7 +5,7 @@ require 'rgb_utils/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'rgb_utils'
-  spec.version       = RgbUtils::VERSION
+  spec.version       = RGBUtils::VERSION
   spec.authors       = ['andrerpbts', 'brunohkbx']
   spec.email         = ['andrerpbts@gmail.com', 'bruno.f.castro12@hotmail.com ']
 
@@ -33,4 +33,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.14'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
+  spec.add_dependency 'activesupport'
+  spec.add_dependency 'virtus'
 end
