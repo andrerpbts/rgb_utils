@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-RSpec.describe RgbUtils do
+RSpec.describe RGBUtils do
   it 'has a version number' do
-    expect(RgbUtils::VERSION).not_to be nil
+    expect(RGBUtils::VERSION).not_to be_nil
   end
 end
