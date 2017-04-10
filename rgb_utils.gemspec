@@ -34,5 +34,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_dependency 'activesupport', '>= 3.2'
-  spec.add_dependency 'virtus', '>= 1.0.0'
+  spec.add_dependency 'virtus', '~> 1.0'
 end
