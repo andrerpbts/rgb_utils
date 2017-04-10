@@ -10,9 +10,9 @@ Gem::Specification.new do |spec|
   spec.email         = ['andrerpbts@gmail.com', 'bruno.f.castro12@hotmail.com ']
 
   spec.summary       = %q{A set of RGB functions}
-  spec.description   = %q{A set of RGB functions}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.description   = %q{A set of RGB functions like luminance, converters and constrast resolvers}
+  spec.homepage      = 'https://github.com/andrerpbts/rgb_utils'
+  spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
