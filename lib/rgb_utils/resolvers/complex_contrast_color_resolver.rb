@@ -1,5 +1,5 @@
 module RGBUtils
-  class InvertColorResolver < Resolver
+  class ComplexContrastColorResolver < Resolver
     def initialize(color, options = {})
       @color = color
       @light_color = options.fetch(:light_color, Config.light_color)

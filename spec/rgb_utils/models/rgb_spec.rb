@@ -38,4 +38,26 @@ RSpec.describe RGBUtils::RGB do
       rgb.to_hex
     end
   end
+  describe '#contrast_color' do
+    let(:rgb) { described_class.new(red: 255, green: 255, blue: 255) }
+
+    context "SimpleContrastColorResolver" do
+      it 'calls the SimpleContrastColorResolver' do
+        expect(RGBUtils::SimpleContrastColorResolver)
+          .to receive(:for)
+          .with(rgb)
+
+        rgb.contrast_color(:simple)
+      end
+    end
+    context "ComplexContrastColorResolver" do
+      it 'calls the ComplexContrastColorResolver' do
+        expect(RGBUtils::ComplexContrastColorResolver)
+          .to receive(:for)
+          .with(rgb)
+
+        rgb.contrast_color(:complex)
+      end
+    end
+  end
 end

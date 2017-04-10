@@ -13,5 +13,11 @@ module RGBUtils
     def to_hex
       RGBToHexConverter.convert(self)
     end
+
+    def contrast_color(type = :simple)
+      return SimpleContrastColorResolver.for(self) if type == :simple
+
+      ComplexContrastColorResolver.for(self)
+    end
   end
 end
