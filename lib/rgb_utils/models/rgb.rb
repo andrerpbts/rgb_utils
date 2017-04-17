@@ -6,6 +6,10 @@ module RGBUtils
     attribute :green, Color
     attribute :blue, Color
 
+    alias_attribute :r, :red
+    alias_attribute :g, :green
+    alias_attribute :b, :blue
+
     def as_unit_range
       [red, green, blue].map { |color| color / 255.0 }
     end

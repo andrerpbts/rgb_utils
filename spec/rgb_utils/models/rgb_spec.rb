@@ -10,6 +10,14 @@ RSpec.describe RGBUtils::RGB do
       it { is_expected.to eq([1.0, 1.0, 1.0]) }
     end
 
+    context 'for white color using alias' do
+      let(:rgb) { described_class.new(r: 255, g: 255, b: 255) }
+
+      subject { rgb.as_unit_range }
+
+      it { is_expected.to eq([1.0, 1.0, 1.0]) }
+    end
+
     context 'for black color' do
       let(:rgb) { described_class.new(red: 0, green: 0, blue: 0) }
 
